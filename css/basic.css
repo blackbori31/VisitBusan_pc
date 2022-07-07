@@ -1,0 +1,550 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
+
+body { 
+    font-family: 'Noto Sans KR', 'Noto Sans', '맑은고딕', sans-serif;
+    
+    width: 1920px;
+    margin: auto;
+}
+
+.sW { /* 가로사이즈 고정 가운데 */
+    width: 1300px;
+    margin: auto;
+}
+
+header {
+    background: #b8e9ff;
+    position:fixed; 
+    top:0; 
+    height:100px; 
+    z-index:10000;
+}
+    .head_wrap {
+        width: 1920px;
+    }
+
+    .head_logo {}
+        h1 a {
+            float: left;
+            width: 235px;
+            height: 80px;
+            margin-top: 10px;
+            margin-left: 50px;
+            background: url('../img/logo_1.png') no-repeat;
+            text-indent: -9999px;
+        }
+        .trigger { display:none; }
+
+
+        .vinav {
+        }
+            .inner {
+                height: 100px;
+            }
+                .main_nav {}
+                    .nav { 
+                        margin-left: 340px;
+                    }
+                    .nav > li {
+                        position: relative;
+                        float: left;
+                        height: 100px;
+                        width: 290px;
+                    }
+                    .nav > li:hover {
+                        background: rgba(17, 135, 207, 0.5);
+                    }
+                    .nav > li > a {
+                        display: block;
+                        line-height: 80px;
+                        font-size: 28px;
+                        font-weight: 500;
+                        color: #fff;
+                        padding: 10px 70px;
+                        text-align: center;
+                    }
+                .sub {
+                    display:none;
+                    width:100%;  
+                    height:auto; 
+                    position: absolute;
+                    left: 0;
+                    z-index:101;
+                    background: rgba(184, 233, 255, 0.7);
+                }
+                .sub > li {
+                    padding: 10px 0 10px 30px;
+                }
+                .sub > li:hover {
+                    background: rgba(17, 135, 207, 0.7);
+                }
+                .sub > li > a {
+                    font-size: 22px;
+                    font-weight: 400;
+                    color:#fff;
+                    line-height: 1.5;
+                }
+
+
+
+
+.navItem {
+    float: right;
+    margin-right: 50px;
+}
+.navItem img {
+    margin: 25px 0;
+}
+.navItem1, .navItem2, .navItem3 {
+    height: 100px;
+    padding: 0 37.5px;
+}
+.navItem1:hover, .navItem2:hover, .navItem3:hover {
+    background: rgba(17, 135, 207, 0.5);
+}
+.navItem2 {
+    float: left;
+}
+.navItem2 > a.searchBtn {
+    background:url('../img/icon/icon_search2.png') no-repeat;
+    width: 49px;
+    height: 49px;
+    display: inline-block;
+    font-size: 0;
+    margin-top: 25px;
+}
+.navItem2 > a.searchBtn.on {
+    background:url('../img/icon/icon_closed_b1.png') no-repeat;
+}
+
+.navItem1 {
+    float: left;
+}
+.navItem3 {
+    position: relative;
+    float: right;
+}  
+.navItem3 > a {}
+    .nInner > ul {
+        display:none;
+        width:100%;  
+        height:auto; 
+        position: absolute;
+        left: 0;
+        z-index:101;
+        background: rgba(184, 233, 255,0.7);
+    }
+        .niList > li {
+            padding: 10px 0 10px 20px;
+        }
+        .niList > li:hover {
+            background: rgba(17, 135, 207, 0.7);
+        }
+
+        .niList > li > a {
+            font-size: 22px;
+            font-weight: 400;
+            color:#fff;
+            line-height: 1.5;
+        }
+
+/*========================================= 검색창 =======================================*/
+.searchTop {
+    display: none;
+    left: 0;
+    width: 100%;
+    z-index: 102;
+}
+.searchArea {
+    height: 400px;
+    background: #b8e9ff;
+}
+.searchInner {
+    width: 800px;
+    margin: auto;
+    padding-top: 210px;
+}
+
+.searchTop fieldset {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    border-radius:10px;
+    background: #fff;
+}
+.searchTop #topquery {
+    width: 700px;
+    height: 70px;
+    line-height: 70px;background:transparent; padding-left:50px; font-size:22px; outline:none;
+}
+.searchTop button {
+    position:absolute; 
+    right:0; 
+    top:0; 
+    width:89px;
+    height:55px; 
+    background:url('../img/icon/icon_search3.png') no-repeat -5px 10px; text-indent:-9999px; 
+    cursor:pointer;
+}
+
+.searchTop .popularWord {
+    margin-top:30px;
+    margin-left: 30px;
+}
+.popularWord dt {
+    float:left; 
+    color:#fff; 
+    width:120px; 
+    font-size: 20px;
+    font-weight:500;
+}
+.popularWord dd {
+    padding-left:15px; 
+}
+.popularWord dd::before {
+    display:inline-block; 
+    content:''; width:2px; 
+    height:33px; 
+    background: #c9c9c9; 
+}
+.popularWord dd span{
+    vertical-align:top; 
+}
+.popularWord dd a {
+    display:inline-block; 
+    padding:0 10px; 
+    color:#1187cf;
+    font-size: 18px;
+}
+
+
+
+/*============================= 메인 이미지그림 =====================================*/
+.main {
+    display: block;
+    width: 1920px;
+    height: 500px;
+    background: url("../img/main01.jpg") no-repeat;
+    margin: auto;
+    margin-top: 100px;
+    max-width: 100%;
+}
+
+/* ======================================== 컨텐츠 부분 ==========================================*/
+
+
+.section01 {
+    height: 500px;
+}
+.smMenu {
+    height: 150px;
+}
+.smMenu li {
+    float: left;
+    margin: 50px 0;
+}
+.smMenu li:nth-child(1), .smMenu li:nth-child(2) {
+    margin-right: 185px;
+}
+
+.smMenu a { 
+    background:#02c9bd;
+    color: #fff;
+    width: 310px;
+    height: 50px;
+    text-align: center; 
+    border-radius:10px;
+    padding: 10px;
+    display:block;
+    font-size:18px;
+    font-weight: 500; 
+    line-height:1.5;
+}
+
+.smBody > div { 
+    display:none;
+}
+.smBody > div:first-child { 
+    display:flex; 
+}
+.smBody a { 
+    flex:1;
+    width: 310px;
+}
+.smBody a img {
+    display: inline-block;
+    width: 310px;
+    height: 210px;
+}
+.smBody a:nth-child(1), .smBody a:nth-child(2), .smBody a:nth-child(3) {
+    margin-right: 20px;
+}
+.smBody a p {
+    font-size: 16px;
+    color: #222;
+    padding: 5px 0 10px 10px;
+    border: 1px solid #c9c9c9;
+    height: 60px;
+}
+
+
+/* ===================================== section02 시작 ======================================== */
+#slider { 
+    width:1300px; 
+    height:250px; 
+    overflow:hidden;
+    margin: auto;
+    margin-bottom: 85px; 
+}
+#slider ul { cursor: pointer;  }
+#slider li { float:left; }
+
+/* ===================================== section02 끝 ======================================== */
+
+
+/* ===================================== section03 시작 ======================================== */
+
+.section03 {
+    background: #b8e9ff;
+}
+.snsW {
+    height: 500px;
+}
+    .sns {
+        float: left;
+        margin: 216px 60px;
+    }
+    .sns img {
+        width: 68px;
+        height: 68px;
+        margin: 0 30px;
+    }
+
+    .snsV iframe {
+        float: right;
+        margin: 30px 0;
+    }
+
+
+    .section04 {
+        margin-top: 30px;
+        height: 600px;
+    }
+        .syMenu {
+            height: 100px;
+            margin-left: 10px;
+        }
+        .syMenu li {
+            float: left;
+            margin: 20px 0;
+        }
+        .syMenu li a {
+            padding: 20px 34px;
+            font-size:18px;
+            font-weight: 400;
+            color:#222;
+        }
+        .syMenu li.on a, .syMenu li a:hover {
+            background: #1187cf;
+            border-radius:10px;
+            font-weight: 500;
+            color:#fff;
+        }
+
+        
+        .syBody > div { 
+            display:none;
+        }
+        .syBody > div:first-child { 
+            display:flex; 
+            float: left;
+        }
+        .syBody a { 
+            flex:1;
+            width: 420px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            cursor: default;
+        }
+        .syBody a img {
+            display: inline-block;
+            width: 420px;
+            height: 310px;
+            cursor: pointer;
+        }
+
+        .sybut {
+            float: left;
+        }
+        .sybut a {
+            background: #02c9bd;
+            color: #fff;
+            width: 250px;
+            height: 50px;
+            text-align: center;
+            border-radius:10px;
+            padding: 10px;
+            display:block;
+            font-size:18px;
+            font-weight: 500; 
+            line-height:1.5;
+            margin: 50px 0 50px 500px;
+        }
+        .sybut a img {
+            width: 30px;
+            margin-left: 20px;
+        }
+    
+    
+    
+    .section05 {
+        background: #c9c9c9;
+        height: 400px;
+    }
+        .sp .spMenu {
+            height: 400px;
+        }
+        .sp .spMenu li {
+            position: relative;
+            float: left;
+            background: #fff;
+            border-radius:20px;
+            width: 550px;
+            height: 120px;
+            text-align:center;
+        }
+                .item01 { margin-left: 40px; margin-top:60px; }
+                .item02 { margin-left: 40px; margin-top:60px; }
+                .item03 { margin-left: 40px; margin-top:40px; margin-bottom:60px; }
+                .item04 { margin-left: 40px; margin-top:40px; margin-bottom:60px; }
+
+            .spMenu span {
+                color: #222222;
+                font-size: 28px;
+                font-weight: 500;
+                position: absolute;
+                margin: 35px;
+                text-align: left;
+                padding-left: 40%;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                
+            }
+            .spMenu img { 
+                width: 80px;
+                position: absolute;
+                margin: auto 100px;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+            }
+
+    footer {
+        background: #0e5783;
+        height: 400px;
+        color: #fff;
+    }
+    footer h3 {
+        font-size: 18px;
+        line-height: 1.3;
+    }
+    footer a {
+        color:#fff;
+        float:left;
+        font-size:18px;
+        font-weight: 500;
+        display: block;
+        line-height: 3;
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+    footer p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 2.5;
+    }    
+    footer .frightN {
+        font-size: 25px;
+        font-weight: 500;
+    }
+    
+        .fleft {
+            float: left;
+            margin-top: 50px;
+            line-height: 1.3;
+        }
+        .fleftA img {
+            height: 100px;
+            margin: auto;
+        }
+
+        
+        .fright {
+            float: right;
+            margin-top: 50px;
+        }
+        .frightB {
+            margin-top:60px;
+        }
+
+
+/*================================= popup ====================================*/
+#popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(17, 135, 207, 0.5);
+    z-index: 101;
+}
+.popupWrap {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+}
+
+#popup img {
+    width: 100%;
+}
+
+#popup .popupBtns {
+    height: 50px;
+    padding-top: 20px;
+    color: #fff;
+}
+#popup .popupBtns  label {
+    float: left;
+    font-size: 16px;
+    margin-left: 20px;
+    background: #fff;
+    color: #222;
+    border-radius: 5px;
+    width: 203px;
+    height: 36px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+#popup .popupBtns  label input {  
+    margin: 0 12px;
+}
+#popup .popupBtns .close {
+    float: right;
+    display: inline-block;
+    background: #fff;
+    color: #222;
+    border-radius: 5px;
+    width: 56px;
+    height: 32px;
+    /* font-size: 15px; */
+    text-align: center;
+    padding-top: 3px;
+    margin-right: 25px;
+}
