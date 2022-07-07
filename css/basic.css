@@ -1,11 +1,9 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500&display=swap');
-
 body { 
     font-family: 'Noto Sans KR', 'Noto Sans', '맑은고딕', sans-serif;
-    
-    width: 1920px;
+    width: 100%;
     margin: auto;
 }
 
@@ -18,10 +16,12 @@ header {
     background: #b8e9ff;
     position:fixed; 
     top:0; 
+    width: 100%;
     height:100px; 
     z-index:10000;
 }
     .head_wrap {
+        margin:auto;
         width: 1920px;
     }
 
@@ -226,7 +226,7 @@ header {
     display: block;
     width: 1920px;
     height: 500px;
-    background: url("../img/main02.jpg") no-repeat;
+    background: url("../img/main01.jpg") no-repeat;
     margin: auto;
     margin-top: 100px;
     max-width: 100%;
@@ -491,3 +491,4 @@ header {
         .frightB {
             margin-top:60px;
         }
+
