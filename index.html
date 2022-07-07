@@ -7,6 +7,13 @@
     <title>Visit Busan</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/basic.css">
+    <script>
+        var UserAgent = navigator.userAgent; 
+        if (UserAgent.match(/iPhone|ipad|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null || UserAgent.match(/LG|SAMSUNG|Samsung/) != null)
+        {
+        location.href = "https://blackbori31.github.io/VisitBusan_mobile";    /* 모바일 홈페이지 경로 */
+        }
+    </script>
     <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
